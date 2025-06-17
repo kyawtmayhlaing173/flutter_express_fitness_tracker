@@ -1,0 +1,43 @@
+name: fitness_tracker_app
+description: A Flutter project for a Fitness Workout Tracker frontend.
+publish_to: "none" # Remove this line if you want to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client for network requests
+  http: ^1.2.1
+  # State management
+  provider: ^6.1.1
+  # Date formatting
+  intl: ^0.19.0
+  # For Either type in clean architecture (optional, but good for functional error handling)
+  dartz: ^0.10.1
+  # For environment variables
+  flutter_dotenv: ^5.1.0
+  equatable: ^2.0.7
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  # Add fonts here if you have custom ones
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: fonts/Inter-Regular.ttf
+  #       - asset: fonts/Inter-Bold.ttf
+  #         weight: 700
+
+  # To load .env file
+  assets:
+    - .env
